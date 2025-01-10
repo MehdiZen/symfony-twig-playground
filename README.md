@@ -1,0 +1,3 @@
+This repository is part of a larger objective to broaden my skills across various frameworks and programming languages. It focuses on the development of multiple applications to deepen my understanding of Symfony and its ecosystem. Through these projects, I aim to explore Symfony's components and features, such as routing, controllers, services, dependency injection, Doctrine ORM, and the Twig templating engine.
+
+Each application will tackle different use cases, showcasing practical implementations of the framework in various scenarios. This approach allows me to not only strengthen my grasp of Symfony but also build a versatile foundation for applying these skills across other technologies and frameworks in the future.
