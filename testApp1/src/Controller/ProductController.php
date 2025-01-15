@@ -46,11 +46,17 @@ class ProductController extends AbstractController
         $product = new Product;
         $form = $this->createForm(ProductType::class, $product);
         $form -> handleRequest($request);
-        if($form->isSubmitted()){
+
+        if($form->isSubmitted() && $form->isValid()){
             $manager->persist($product);
             $manager->flush();
+            $this->addFlash(
+                'notice',
+                'Product created successfully'
+            );
             return $this->redirectToRoute('app_product_show', ['id' => $product->getId()]);
         }
+
         return $this->render('product/new.html.twig', [
             'form' => $form,
         ]);
